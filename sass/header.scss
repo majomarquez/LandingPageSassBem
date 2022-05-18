@@ -1,0 +1,82 @@
+@import "variables";
+@mixin flexDirectionCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+}
+// Header
+header {
+  .navbar {
+    @include flexDirectionCenter(column);
+    margin-bottom: 2.5rem;
+    background-color: $cream;
+    .navbar__brand {
+      @include flexDirectionCenter(column);
+      padding: 1em 0;
+      font-size: 1.2rem;
+      color: $greyDark;
+      text-decoration: none;
+      img {
+        width: 5em;
+      }
+      .navbar__text {
+        @include flexDirectionCenter(row);
+        p {
+          margin: 0;
+          padding-right: 0.5em;
+        }
+      }
+    }
+    .navbar__nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border-radius: 0.2em;
+      background: linear-gradient(to bottom, $cream, $pinkLigth);
+      .navbar__link {
+        display: inline-block;
+        padding: 1.5em;
+        color: $greyDark;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100px;
+      padding-top: 0;
+      .navbar__brand {
+        @include flexDirectionCenter(row);
+        .navbar__text {
+          @include flexDirectionCenter(column);
+        }
+      }
+      .navbar__nav {
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        padding: 0 1.5em;
+        font-size: 1.2rem;
+        background: linear-gradient(to right, $cream, $pinkLigth);
+        .navbar__link {
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

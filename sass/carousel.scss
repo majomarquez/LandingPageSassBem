@@ -1,0 +1,113 @@
+@import "variables";
+@mixin background($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  object-fit: contain;
+}
+@mixin flexAlignCenter($align) {
+  display: flex;
+  align-items: $align;
+  justify-content: center;
+}
+// // Carousel
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: #fff;
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .swiper-slide {
+      text-align: center;
+      width: 300px;
+      height: 300px;
+      font-size: 2em;
+      color: white;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  #slide1 {
+    @include flexAlignCenter(center);
+    @include background(url(../Asset/img/slide6.png));
+    color: $greyDark;
+  }
+  #slide2 {
+    @include flexAlignCenter(flex-end);
+    @include background(url(../Asset/img/slide2.jpg));
+    color: $pink;
+  }
+  #slide3 {
+    @include background(url(../Asset/img/slide4.jpg));
+    color: $greyDark;
+  }
+  #slide4 {
+    @include flexAlignCenter(flex-end);
+    @include background(url(../Asset/img/slide3.jpg));
+  }
+  #slide5 {
+    @include background(url(../Asset/img/slide5.jpg));
+    color: $greyDark;
+  }
+  #slide6 {
+    @include flexAlignCenter(flex-end);
+    @include background(url(../Asset/img/slide1.jpg));
+  }
+}
+
+@media (min-width: 576px) {
+  body {
+    .swiper {
+      .swiper-slide {
+        width: 320px;
+        height: 320px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  body {
+    .swiper {
+      .swiper-slide {
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  body {
+    .swiper {
+      .swiper-slide {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    .swiper {
+      .swiper-slide {
+        width: 450px;
+        height: 450px;
+      }
+    }
+  }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  body {
+    .swiper {
+      .swiper-slide {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  }
+}

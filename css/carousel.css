@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: #fff;
+}
+body .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+body .swiper .swiper-slide {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  font-size: 2em;
+  color: white;
+  background-position: center;
+  background-size: cover;
+}
+body #slide1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Asset/img/slide6.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  object-fit: contain;
+  color: rgb(65, 65, 65);
+}
+body #slide2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url(../Asset/img/slide2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  object-fit: contain;
+  color: rgb(255, 201, 190);
+}
+body #slide3 {
+  background-image: url(../Asset/img/slide4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  object-fit: contain;
+  color: rgb(65, 65, 65);
+}
+body #slide4 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url(../Asset/img/slide3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  object-fit: contain;
+}
+body #slide5 {
+  background-image: url(../Asset/img/slide5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  object-fit: contain;
+  color: rgb(65, 65, 65);
+}
+body #slide6 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url(../Asset/img/slide1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  object-fit: contain;
+}
+
+@media (min-width: 576px) {
+  body .swiper .swiper-slide {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  body .swiper .swiper-slide {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  body .swiper .swiper-slide {
+    width: 400px;
+    height: 400px;
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body .swiper .swiper-slide {
+    width: 450px;
+    height: 450px;
+  }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  body .swiper .swiper-slide {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/*# sourceMappingURL=carousel.css.map */
