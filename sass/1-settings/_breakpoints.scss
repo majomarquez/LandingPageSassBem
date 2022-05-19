@@ -1,0 +1,43 @@
+$breakpoints: (
+  "s": 576px,
+  "m": 768px,
+  "l": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+// Small devices (landscape phones, 576px and up)
+@mixin s {
+  @media (min-width: map-get($breakpoints, "s")) {
+    @content;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@mixin m {
+  @media (min-width: map-get($breakpoints, "m")) {
+    @content;
+  }
+}
+// Large devices (desktops, 992px and up)
+@mixin l {
+  @media (min-width: map-get($breakpoints, "l")) {
+    @content;
+  }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin xxl {
+  @media (min-width: map-get($breakpoints, "xxl")) {
+    @content;
+  }
+}
+// mixin create to specific cases
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

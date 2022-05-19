@@ -1,0 +1,98 @@
+  // // Carousel
+body {
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &-slide {
+      text-align: center;
+      width: 300px;
+      height: 300px;
+      font-size: 2em;
+      color: white;
+      background-position: center;
+      background-size: cover;
+    }
+    &__new--bg1 {
+      @include flexAlignCenter(center);
+      @include background(url(../Asset/img/slide6.png));
+      color: $greyDark;
+    }
+    &__new--bg2 {
+      @include flexAlignCenter(flex-end);
+      @include background(url(../Asset/img/slide2.jpg));
+      color: $pink;
+    }
+    &__new--bg3 {
+      @include background(url(../Asset/img/slide4.jpg));
+      color: $greyDark;
+    }
+    &__new--bg4 {
+      @include flexAlignCenter(flex-end);
+      @include background(url(../Asset/img/slide3.jpg));
+    }
+    &__new--bg5 {
+      @include background(url(../Asset/img/slide5.jpg));
+      color: $greyDark;
+    }
+    &__new--bg6 {
+      @include flexAlignCenter(flex-end);
+      @include background(url(../Asset/img/slide1.jpg));
+    }
+} 
+}
+// Small devices (landscape phones, 576px and up)
+  @include s {
+   body {
+    .swiper {
+      &-slide {
+        width: 320px;
+        height: 320px;
+      }
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+ @include m {
+  body {
+    .swiper {
+      &-slide {
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+ @include l {
+  body {
+    .swiper {
+      &-slide {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+ @include xl {
+  body {
+    .swiper {
+      &-slide {
+        width: 450px;
+        height: 450px;
+      }
+    }
+  }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+ @include xxl {
+  body {
+    .swiper {
+      &-slide {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  }
+}

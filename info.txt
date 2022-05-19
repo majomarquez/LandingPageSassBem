@@ -1,0 +1,19 @@
+scss folder
+1-settings : variables, sources, mixin
+2-tools : functions
+3-generics : reset , normalize
+4-elements : specific files for html tags
+5-objects :grid , tools that help modify the layout
+6-components: buttons, boxes, menu..
+7-utilities : classes that do something specific. eg padding margin , text , colors
+
+Carpeta scss
+1-settings : variables, fuentes,mixin
+2-tools : funciones
+3-generics : reset , normalize
+4-elements : archivos especificos para etiquetas html
+5-objects :grid , herramientas que ayuden a modificar el layout
+6-components : botnes , cajas , menu..
+7-utilities : clases que hacen algo especifico . ej padding margin , texto , colores
+
+

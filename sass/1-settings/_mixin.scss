@@ -1,0 +1,21 @@
+// @mixin flex
+
+@mixin flexDirectionCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+}
+
+@mixin flexAlignCenter($align) {
+  display: flex;
+  align-items: $align;
+  justify-content: center;
+}
+
+// @mixin background img center
+@mixin background($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  object-fit: contain;
+}
