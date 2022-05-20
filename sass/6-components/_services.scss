@@ -1,12 +1,22 @@
+.services{
+  padding-top: 378px;
+
+}
 .services__item {
+  @include flexDirectionCenter(column);
+  text-align: center;
+.services__item--mt{
+  
+}
   p{
     padding:5% 16% 16% 10%;
-    text-align:center;
   }
 }
 // Medium devices (tablets, 768px and up)
 @include m {
   .services {
-      @include flexDirectionCenter(row);
+      text-align: center;
+      @include flexAlignCenter(center);
+      padding-top: 0;
 }
 }

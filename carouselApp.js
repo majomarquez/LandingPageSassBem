@@ -1,3 +1,4 @@
+
 // Carousel
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
@@ -22,6 +23,6 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true
 });
-// Initialize Swiper
+
 
 

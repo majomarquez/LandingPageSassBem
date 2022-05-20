@@ -1,8 +1,8 @@
 .us {
   text-align: center;
-  padding-bottom: 20%;
+  padding-bottom: 35px;
   .us__text {
-    padding: 25% 15% 10% 15%;
+    @include padding(53%) 
   }
   .us__img {
     height: 250px;
@@ -11,17 +11,37 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    margin-bottom:25%;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@include s {
+  .us {
+    .us__text {
+      @include padding(46%)
+    }
   }
 }
 // Medium devices (tablets, 768px and up)
 @include m {
-  .us__text {
-    padding: 25% 22% 10% 22%;
-  }
+  .us {
+      .us__text {
+        @include padding(21%)
+      }
+}
 }
 // Large devices (desktops, 992px and up)
 @include l {
-  .us__text {
-    padding: 25% 30% 10% 30%;
+  .us {
+    .us__text {
+      @include padding(14%)
+    }
+  }
+}
+@include xl {
+  .us {
+    .us__text {
+      @include padding(10%)
+    }
   }
 }

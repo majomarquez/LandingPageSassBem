@@ -19,3 +19,9 @@
   background-size: 100% auto;
   object-fit: contain;
 }
+@mixin padding($top) {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: $top;
+}

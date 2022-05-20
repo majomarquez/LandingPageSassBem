@@ -5,8 +5,8 @@ header {
       @include flexDirectionCenter(column);
       margin-bottom: 2.5rem;
       background-color: $cream;
+      z-index: 5;
       
-        /* Set the navbar to fixed position */
        
       &__brand {
         @include flexDirectionCenter(column);
@@ -14,35 +14,41 @@ header {
         font-size: 1.2rem;
         color: $greyDark;
         text-decoration: none;
-        img {
+        &--img {
           width: 5em;
         }
-        .navbar__text {
+        &--font {
           @include flexDirectionCenter(row);
           p {
             margin: 0;
-            padding-right: 0.5em;
+            padding-right: 0.7em ;
           }
         }
       }
-  
-      &__nav {
+        &__nav {
         display: flex;
         justify-content: space-between;
         width: 100%;
         border-radius: 0.2em;
         background: linear-gradient(to bottom, $cream, $pinkLigth);
-        .navbar__link {
+        &-link {
           display: inline-block;
-          padding: 5em;
+          padding: 5%;
           color: $greyDark;
           text-decoration: none;
         }
+                a:hover {
+                  background-color: $pink;
+                  border-radius: 0.3em;
+                  height: 10%;
+                  justify-content: right;
+                }
       }
     }
   }
-  
+
   /*  Medium devices (tablets, 768px and up) */
+
   @include m {
     header {
       .navbar {
@@ -50,12 +56,16 @@ header {
         justify-content: space-between;
         height: 100px;
         padding-top: 0;
+          a:hover {
+              height: 25%;
+          }
         &__brand {
           @include flexDirectionCenter(row);
-          .navbar__text {
+          .navbar__brand--font {
             @include flexDirectionCenter(column);
           }
         }
+
         &__nav {
           align-items: center;
           height: 100%;
@@ -63,14 +73,25 @@ header {
           padding: 0 1.5em;
           font-size: 1.2rem;
           background: linear-gradient(to right, $cream, $pinkLigth);
-          .navbar__link {
+          &-link {
             justify-content: space-around;
           }
         }
       }
     }
+              
   }
-  
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+    
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky .content {
+          padding-top: 60px;
+        }
   /* Large devices (desktops, 992px and up) */
   @include l {}
   

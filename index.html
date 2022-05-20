@@ -13,48 +13,48 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="/" class="navbar__brand">
-                <img src="./Asset/img/logo.jpeg" alt="" class="navbar__logo">
-                <div class="navbar__text">
+                <img src="./Asset/img/logo.jpeg" alt="" class="navbar__brand--img">
+                <div class="navbar__brand--font">
                     <p>Desarrollo</p>
                     <p>Software</p>
                 </div>
             </a>
             <nav class="navbar__nav">
-                <a href="#" class="navbar__link">Inicio</a>
-                <a href="#" class="navbar__link">Tienda</a>
-                <a href="#" class="navbar__link">Nosotros</a>
-                <a href="#" class="navbar__link">Contacto</a>
+                <a href="#" class="navbar__nav-link">Inicio</a>
+                <a href="#us" class="navbar__nav-link">Nosotros</a>
+                <a href="#services" class="navbar__nav-link">Servicios</a>
+                <a href="#" class="navbar__nav-link">Contacto</a>
             </nav>
         </nav>
     </header>
     <!-- carousel -->
-    <div class="swiper mySwiper ">
+    <div class="swiper mySwiper " id="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper__new--bg1">
+            <div class="swiper-slide swiper-slide--bg1">
                 <h2>Data Science</h2>
             </div>
-            <div class="swiper-slide swiper__new--bg2">
+            <div class="swiper-slide swiper-slide--bg2">
                 <h2>User Interface</h2>
             </div>
-            <div class="swiper-slide swiper__new--bg3" id="slide3">
+            <div class="swiper-slide swiper-slide--bg3" id="slide3">
                 <h2>Mobile app</h2>
             </div>
-            <div class="swiper-slide swiper__new--bg4" id="slide4">
+            <div class="swiper-slide swiper-slide--bg4" id="slide4">
                 <h2>Web Application</h2>
             </div>
-            <div class="swiper-slide swiper__new--bg5" id="slide5">
+            <div class="swiper-slide swiper-slide--bg5" id="slide5">
                 <h2>User Experience</h2>
             </div>
-            <div class="swiper-slide swiper__new--bg6" id="slide6">
+            <div class="swiper-slide swiper-slide--bg6" id="slide6">
                 <h2>Design Thinking</h2>
             </div>
         </div>
         <div class="swiper-pagination">
         </div>
     </div>
-    <main class="us">
+    <main class="us" id="us">
         <div class="us__text">
             <h1>CUNO</h1>
             <h2>Desarrollamos Experiencias</h2>
@@ -67,10 +67,10 @@
         </div>
     </main>
 
-    <section class="services">
-        <div class="services__item">
-            <img src="./asset/img/management.png" alt="Management" width="40" height="35" />
-            <h2>MANAGEMENT</h2>
+    <section class="services" id="services">
+        <div class="services__item services__item--mt">
+            <img src="./asset/img/1-design.png" alt="Design" />
+            <h2>DISEÑO</h2>
 
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
@@ -82,8 +82,8 @@
         </div>
 
         <div class="services__item">
-            <img src="./asset/img/planning.png" alt="Planing" />
-            <h2>PLANNING</h2>
+            <img src="./asset/img/2-mobile.png" alt="Mobile" />
+            <h2>MOBILE APP</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
                 cumque libero deleniti repellenduset veritatis laboriosam
@@ -93,19 +93,24 @@
             </p>
         </div>
         <div class="services__item">
-            <img src="./asset/img/marketing.png" alt="Marketing" />
-            <h2>MARKETING</h2>
+            <img src="./asset/img/3-webapp.png" alt="Web" />
+            <h2>WEB APP</h2>
             <p class="services__item--pading">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
                 cumque libero deleniti repellenduset veritatis laboriosam
                 exercitationem voluptates, itaque repellat numquam architecto
                 reiciendissoluta distinctio vel, voluptas impedit voluptate
                 eligendi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+                cumque libero deleniti repellenduset veritatis laboriosam
+                exercitationem voluptates, itaque repellat numquam architecto
+                reiciendissoluta distinctio vel, voluptas impedit voluptate
+                eligendi.
             </p>
         </div>
         <div class="services__item">
-            <img src="./asset/img/reports.png" alt="Reports" />
-            <h2>REPORTS</h2>
+            <img src="./asset/img/4-data.png" alt="Data" />
+            <h2>DATA</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
                 cumque libero deleniti repellenduset veritatis laboriosam
@@ -117,7 +122,9 @@
     </section>
     <!-- Swiper JS -->
     <script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./app.js"></script>
+    <script src="./carouselApp.js"></script>
+    <script src="./navbar.js"></script>
+
 </body>
 
 </html>

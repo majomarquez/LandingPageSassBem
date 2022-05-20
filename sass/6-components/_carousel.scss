@@ -1,9 +1,10 @@
-  // // Carousel
+// // Carousel
 body {
   .swiper {
     width: 100%;
-    padding-top: 50px;
+    margin-top: 57%;
     padding-bottom: 50px;
+
     &-slide {
       text-align: center;
       width: 300px;
@@ -13,38 +14,44 @@ body {
       background-position: center;
       background-size: cover;
     }
-    &__new--bg1 {
+
+    // background slide
+
+    &-slide--bg1 {
       @include flexAlignCenter(center);
       @include background(url(../Asset/img/slide6.png));
       color: $greyDark;
     }
-    &__new--bg2 {
+    &-slide--bg2 {
       @include flexAlignCenter(flex-end);
       @include background(url(../Asset/img/slide2.jpg));
       color: $pink;
     }
-    &__new--bg3 {
+    &-slide--bg3 {
       @include background(url(../Asset/img/slide4.jpg));
       color: $greyDark;
     }
-    &__new--bg4 {
+    &-slide--bg4 {
       @include flexAlignCenter(flex-end);
       @include background(url(../Asset/img/slide3.jpg));
     }
-    &__new--bg5 {
+    &-slide--bg5 {
       @include background(url(../Asset/img/slide5.jpg));
       color: $greyDark;
     }
-    &__new--bg6 {
+    &-slide--bg6 {
       @include flexAlignCenter(flex-end);
       @include background(url(../Asset/img/slide1.jpg));
     }
-} 
+  }
 }
+
 // Small devices (landscape phones, 576px and up)
-  @include s {
-   body {
+
+@include s {
+  body {
     .swiper {
+      margin-top: 44%;
       &-slide {
         width: 320px;
         height: 320px;
@@ -53,9 +60,10 @@ body {
   }
 }
 // Medium devices (tablets, 768px and up)
- @include m {
+@include m {
   body {
     .swiper {
+      margin-top: 20%;
       &-slide {
         width: 350px;
         height: 350px;
@@ -64,9 +72,10 @@ body {
   }
 }
 // Large devices (desktops, 992px and up)
- @include l {
+@include l {
   body {
     .swiper {
+    margin-top: 15%;
       &-slide {
         width: 400px;
         height: 400px;
@@ -75,9 +84,10 @@ body {
   }
 }
 /* X-Large devices (large desktops, 1200px and up) */
- @include xl {
+@include xl {
   body {
     .swiper {
+      margin-top: 12%;
       &-slide {
         width: 450px;
         height: 450px;
@@ -86,9 +96,10 @@ body {
   }
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
- @include xxl {
+@include xxl {
   body {
     .swiper {
+      margin-top: 10%;
       &-slide {
         width: 500px;
         height: 500px;
