@@ -354,10 +354,10 @@ body .swiper-slide {
   text-align: center;
   width: 300px;
   height: 300px;
-  font-size: 2em;
-  color: white;
   background-position: center;
   background-size: cover;
+  font-size: 2em;
+  color: white;
 }
 body .swiper-slide--bg1 {
   display: flex;
@@ -439,7 +439,6 @@ body .swiper-slide--bg6 {
     height: 400px;
   }
 }
-/* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body .swiper {
     margin-top: 12%;
@@ -449,7 +448,6 @@ body .swiper-slide--bg6 {
     height: 450px;
   }
 }
-/* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   body .swiper {
     margin-top: 10%;
@@ -502,13 +500,12 @@ header .navbar__nav-link {
   text-decoration: none;
 }
 header .navbar__nav a:hover {
-  background-color: rgb(255, 201, 190);
-  border-radius: 0.3em;
-  height: 10%;
   justify-content: right;
+  height: 10%;
+  border-radius: 0.3em;
+  background-color: rgb(255, 201, 190);
 }
 
-/*  Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   header .navbar {
     flex-direction: row;
@@ -534,28 +531,23 @@ header .navbar__nav a:hover {
     height: 100%;
     width: 50%;
     padding: 0 1.5em;
-    font-size: 1.2rem;
     background: linear-gradient(to right, rgb(240, 240, 240), rgba(255, 201, 190, 0.308));
+    font-size: 1.2rem;
   }
   header .navbar__nav-link {
     justify-content: space-around;
   }
 }
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
+  width: 100%;
   position: fixed;
   top: 0;
-  width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky .content {
   padding-top: 60px;
 }
 
-/* Large devices (desktops, 992px and up) */
-/* X-Large devices (large desktops, 1200px and up) */
-/* XX-Large devices (larger desktops, 1400px and up) */
 .us {
   text-align: center;
   padding-bottom: 35px;
@@ -569,11 +561,11 @@ header .navbar__nav a:hover {
 .us .us__img {
   height: 250px;
   width: auto;
+  margin-bottom: 25%;
   background-image: url(../../Asset/img/social-media-3758364_1920.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  margin-bottom: 25%;
 }
 
 @media (min-width: 576px) {
@@ -611,7 +603,6 @@ header .navbar__nav a:hover {
 .services {
   padding-top: 378px;
 }
-
 .services__item {
   display: flex;
   flex-direction: column;
@@ -622,13 +613,185 @@ header .navbar__nav a:hover {
   padding: 5% 16% 16% 10%;
 }
 
+@media (min-width: 576px) {
+  .services {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 46%;
+  }
+}
 @media (min-width: 768px) {
   .services {
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 21%;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .services {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 14%;
+  }
+}
+@media (min-width: 1200px) {
+  .services {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+}
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding-top: 58%;
+  background-image: url(../../Asset/img/footer/background-footer.svg);
+  background-size: cover;
+}
+.container__footer a {
+  text-decoration: none;
+}
+.container__footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+  text-align: center;
+}
+.container__footer-box-logo img {
+  width: 42%;
+}
+.container__footer-box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__footer-box-terms {
+  max-width: 300px;
+  font-size: 1.2em;
+  color: rgba(107, 107, 107, 0.647);
+}
+.container__footer-box h2 {
+  margin-bottom: 2%;
+  font-weight: 700;
+  color: rgb(65, 65, 65);
+}
+.container__footer-box a {
+  margin-top: 15%;
+  font-weight: 600;
+  color: rgba(107, 107, 107, 0.647);
+}
+.container__footer-box a:hover {
+  opacity: 0.8;
+}
+.container__footer-box-media {
+  font-size: 30px;
+  width: 10%;
+  text-decoration: none;
+}
+.container__footer-box-media a {
+  margin-top: 2%;
+}
+.container__footer-box--flex {
+  display: flex;
+  width: 27%;
+}
+.container__footer-box--flex-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container__footer-box--flex-media img {
+  width: 18%;
+}
+
+.box__copyright {
+  height: 70px;
+  margin: auto;
+  padding: 0px 40px;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 0.599);
+  border-top: 0.2em solid rgba(107, 107, 107, 0.647);
+}
+.box__copyright p {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #7a7a7a;
+}
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
+}
+
+@media (min-width: 576px) {
+  .container__footer {
+    margin-top: 36%;
+    padding-top: 34%;
+  }
+}
+@media (min-width: 768px) {
+  .container__footer {
+    padding-top: 15%;
+  }
+  .container__footer-box--line a {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .container__footer {
+    margin-top: 6%;
+    padding-top: 10%;
+  }
+  .container__footer-box {
+    width: auto;
+  }
+  .container__footer-box h2 {
+    margin-bottom: 20px;
+  }
+  .container__footer-box-terms p {
+    margin: 0;
+  }
+  .container__footer-box--flex-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__footer-box-mb h2 {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .container__footer {
+    padding-top: 8%;
+  }
+
+  .container__footer-box--flex-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__footer-box--flex-media a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container__footer-box--flex-media a img {
+    width: 22%;
+  }
+  .container__footer-box--flex-media a p {
+    margin-left: 12%;
   }
 }
 

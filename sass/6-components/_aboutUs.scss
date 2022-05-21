@@ -7,11 +7,11 @@
   .us__img {
     height: 250px;
     width: auto;
+    margin-bottom: 25%;
     background-image: url(../../Asset/img/social-media-3758364_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin-bottom:25%;
   }
 }
 // Small devices (landscape phones, 576px and up)
@@ -25,10 +25,10 @@
 // Medium devices (tablets, 768px and up)
 @include m {
   .us {
-      .us__text {
-        @include padding(21%)
-      }
-}
+    .us__text {
+      @include padding(21%)
+    }
+  }
 }
 // Large devices (desktops, 992px and up)
 @include l {
@@ -38,6 +38,7 @@
     }
   }
 }
+// XX-Large devices (larger desktops, 1400px and up) 
 @include xl {
   .us {
     .us__text {

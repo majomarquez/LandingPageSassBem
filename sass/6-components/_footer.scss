@@ -1,0 +1,144 @@
+//FOOTER top
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top: 58%;
+    background-image: url(../../Asset/img/footer/background-footer.svg);
+    background-size: cover;
+    a {
+        text-decoration: none;
+    }   
+    &-box {
+        @include flexDirectionCenter(column);
+        width: 100%;
+        padding: 20px 40px;
+        text-align: center;
+        &-logo {
+            img {
+                width: 42%;
+            }
+        }
+        &-item{
+            @include flexDirectionCenter(column);
+        }
+        &-terms {
+            max-width: 300px;
+            font-size: 1.2em;
+            color: $greyMedium;
+        }
+        h2 {
+            margin-bottom: 2%;
+            font-weight: 700;
+            color: $greyDark;
+        }
+        a {
+            margin-top: 15%;
+            font-weight: 600;
+            color: $greyMedium;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+        &-media {
+            font-size: 30px;
+            width: 10%;
+            text-decoration: none;
+            a{
+                margin-top: 2%;
+            }
+        }
+    }
+    &-box--flex {
+        display: flex;
+        width: 27%;
+        &-media {
+            @include flexDirectionCenter(row);
+            img {
+                width: 18%
+            }
+        }
+    }
+}
+//footer bottom
+.box__copyright {
+    height: 70px;
+    margin: auto;
+    padding: 0px 40px;
+    text-align: center; 
+    background-color:$footer;
+    border-top: 0.2em solid $greyMedium;
+    p {
+       padding-top:12px;
+       padding-bottom:12px;
+        color: #7a7a7a;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #7a7a7a;
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@include s {
+    .container__footer {
+        margin-top:36%;
+        padding-top: 34%;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@include m {
+    .container__footer {
+        padding-top: 15%;
+        &-box--line a {
+            flex-direction: row;
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@include l {
+    .container__footer {
+        margin-top:6%;
+        padding-top: 10%;
+        &-box {
+            width: auto;
+            h2{
+                margin-bottom: 20px;
+            }
+            &-terms {
+                p {
+                    margin: 0;
+                }
+            }
+            &--flex-media {
+                @include flexDirectionCenter(column);
+            }
+        }
+        &-box-mb {
+            h2{
+                margin-bottom: 10px;
+            }
+        }   
+    }              
+}
+// X-Large devices (large desktops, 1200px and up)
+@include xl {
+    .container__footer {
+        padding-top: 8%;
+    }
+    .container__footer-box--flex-media {
+        @include flexDirectionCenter(column);
+        a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                width: 22%;
+            }
+            p{
+                margin-left:12%;
+            }
+        }
+    }
+}

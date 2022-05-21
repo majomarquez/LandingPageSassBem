@@ -1,17 +1,14 @@
 // @mixin flex
-
 @mixin flexDirectionCenter($direction) {
   display: flex;
   flex-direction: $direction;
   align-items: center;
 }
-
 @mixin flexAlignCenter($align) {
   display: flex;
   align-items: $align;
   justify-content: center;
 }
-
 // @mixin background img center
 @mixin background($url) {
   background-image: $url;
@@ -20,8 +17,8 @@
   object-fit: contain;
 }
 @mixin padding($top) {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
-    padding-top: $top;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: $top;
 }

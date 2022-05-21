@@ -1,6 +1,6 @@
 
 // Carousel
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".my__swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,

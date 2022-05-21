@@ -1,22 +1,36 @@
 .services{
   padding-top: 378px;
-
+  &__item {
+    @include flexDirectionCenter(column);
+    text-align: center;
+    p{
+      padding:5% 16% 16% 10%;
+    }
+  }
 }
-.services__item {
-  @include flexDirectionCenter(column);
-  text-align: center;
-.services__item--mt{
-  
-}
-  p{
-    padding:5% 16% 16% 10%;
+// Small devices (landscape phones, 576px and up)
+@include s {
+  .services {
+    @include padding(46%)
   }
 }
 // Medium devices (tablets, 768px and up)
 @include m {
-  .services {
-      text-align: center;
-      @include flexAlignCenter(center);
-      padding-top: 0;
+  .services{
+    @include flexAlignCenter(center);
+    @include padding(21%);
+    text-align: center;
+  }
 }
+// Large devices (desktops, 992px and up)
+@include l {
+  .services{
+    @include padding(14%)
+  }
+}
+//X-Large devices (large desktops, 1200px and up) 
+@include xl {
+  .services {
+    @include padding(10%)
+  }
 }
